@@ -11,7 +11,8 @@ public abstract class Animal {
         }
 
         public Animal() {
-
+                super();
+                System.out.println("Clasa animal a fost apelata");
         }
 
 

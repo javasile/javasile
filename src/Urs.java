@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 public class Urs extends Animal implements Blanos{
     public Urs(){
+        static{
+            System.out.println("Clasa animal a fost apelata");
+        }
+        {
+            System.out.println("Bloc non- static anonim");
+        }
         Scanner textScan = new Scanner(System.in);
         Scanner nrScan = new Scanner(System.in);
 //        super();
@@ -26,4 +32,5 @@ public class Urs extends Animal implements Blanos{
     public void blana(){
 
     }
+
 }
