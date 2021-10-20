@@ -6,6 +6,18 @@ public abstract class Animal {
         private String culoare;
         private boolean salbatic;
 
+        @Override
+        public String toString() {
+                return "Animal{" +
+                        "tipAnimal='" + tipAnimal + '\'' +
+                        ", tipHrana='" + tipHrana + '\'' +
+                        ", greutate=" + greutate +
+                        ", varsta=" + varsta +
+                        ", culoare='" + culoare + '\'' +
+                        ", salbatic=" + salbatic +
+                        '}';
+        }
+
         public Animal(Animal animal) {
 
         }

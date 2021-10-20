@@ -17,4 +17,5 @@ public class Cal extends Animal{
         System.out.println("Din clasa Cal + String -override!");
         kg(2000);
     }
+
 }
