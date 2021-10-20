@@ -24,6 +24,5 @@ public class Urs extends Animal implements Blanos{
                 "\n"+"O varsta de: "+getVarsta()+ " ani"+ "\n"+"De culoare "+getCuloare());
     }
     public void blana(){
-
     }
 }
