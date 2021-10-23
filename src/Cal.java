@@ -1,5 +1,5 @@
 public class Cal extends Animal{
-    public Cal(){
+    public Cal() throws Exception{
         super();
         super.setGreutate(200);
         super.setTipAnimal("Domestic");

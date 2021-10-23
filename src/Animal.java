@@ -1,3 +1,5 @@
+import exceptions.InvalidAgeNumber;
+
 public abstract class Animal {
         private String tipAnimal;
         private String tipHrana;
@@ -18,10 +20,6 @@ public abstract class Animal {
                         '}';
         }
 
-        public Animal(Animal animal) {
-
-        }
-
         public Animal() {
                 super();
                 System.out.println("Clasa animal a fost apelata");
@@ -40,7 +38,8 @@ public abstract class Animal {
                 return tipHrana;
         }
 
-        public void setTipHrana(String tipHrana) {
+        public void setTipHrana(String tipHrana) throws Exception {
+
                 this.tipHrana = tipHrana;
         }
 
@@ -56,8 +55,12 @@ public abstract class Animal {
                 return varsta;
         }
 
-        public void setVarsta(float varsta) {
-                this.varsta = varsta;
+        public void setVarsta(float varsta) throws InvalidAgeNumber {
+               InvalidAgeNumber e = new InvalidAgeNumber();
+                if (varsta > 0) {
+                        this.varsta = varsta;
+                } else
+                        throw e;
         }
 
         public String getCuloare() {
@@ -68,7 +71,7 @@ public abstract class Animal {
                 this.culoare = culoare;
         }
 
-        public boolean isSalbatic() {
+        public boolean getSalbatic() {
                 return salbatic;
         }
 
